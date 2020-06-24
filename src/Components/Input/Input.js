@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Input.css";
+import "./Input.scss";
 import "emoji-mart/css/emoji-mart.css";
 import { Picker } from "emoji-mart";
 import { faLaughBeam } from "@fortawesome/free-solid-svg-icons";

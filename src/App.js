@@ -1,22 +1,10 @@
 import React, { Component } from "react";
-import "./App.css";
+import "./App.scss";
 import Messages from "./Components/Messages/Messages";
 import Input from "./Components/Input/Input";
+import { randomName, randomColor } from "./Helper";
 import picture from "./talk.png";
 
-function randomName() {
-  let randomNumber = Math.floor(Math.random() * 101);
-  return "User" + randomNumber;
-}
-
-function randomColor() {
-  var letters = "0123456789ABCDEF";
-  var color = "#";
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
 class App extends Component {
   state = {
     messages: [],
@@ -45,7 +33,7 @@ class App extends Component {
     room.on("message", (message) => {
       const { data, member, timestamp } = message;
       const messages = this.state.messages;
-      const time = new Date(timestamp).toLocaleTimeString("hr-HR", {
+      const time = new Date(timestamp * 1000).toLocaleTimeString("hr-HR", {
         hour: "2-digit",
         minute: "2-digit",
       });

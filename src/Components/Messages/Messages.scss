@@ -1,3 +1,5 @@
+$gray: #808080;
+
 .messages-list {
   padding: 20px 0;
   max-width: 900px;
@@ -24,28 +26,34 @@
   padding-right: 10px;
 }
 
-.currentMember > .message-text {
-  align-items: flex-end;
+.currentMember > {
+  .message-text {
+    align-items: flex-end;
+  }
 }
 
-.message-text > .username {
-  display: block;
-  color: gray;
-  font-size: 14px;
-  padding-bottom: 4px;
+.message-text > {
+  .username {
+    display: block;
+    color: $gray;
+    font-size: 14px;
+    padding-bottom: 4px;
+  }
 }
 
-.message-text > .text {
-  padding: 10px;
-  max-width: 400px;
-  margin: 0;
-  border-radius: 12px;
-  display: inline-block;
+.message-text > {
+  .text {
+    padding: 10px;
+    max-width: 400px;
+    margin: 0;
+    border-radius: 12px;
+    display: inline-block;
+  }
 }
 
 .time {
   display: block;
-  color: gray;
+  color: $gray;
   font-size: 14px;
   padding-bottom: 4px;
 }

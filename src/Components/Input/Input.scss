@@ -1,3 +1,8 @@
+$coral: #ee6988;
+$black: #000;
+$white: #fff;
+$lightBlue: #add8e6;
+
 form {
   display: flex;
   width: 100%;
@@ -10,17 +15,23 @@ input {
   padding: 0.5rem;
   font-size: 1rem;
   border-radius: 8px;
-  border: 1px solid black;
+  border: 1px solid $black;
   width: 50rem;
-  color: black;
+  color: $black;
 }
 
 .toggle-emoji {
-  color: white;
-  background-color: lightblue;
-  border: 1px solid white;
+  color: $white;
+  background-color: $lightBlue;
+  border: 1px solid $white;
   margin-left: 10px;
   border-radius: 8px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $black;
+    color: $lightBlue;
+  }
 }
 
 .emoji-mart {
@@ -32,15 +43,15 @@ input {
 .button-send {
   padding: 8px 16px;
   font-size: 16px;
-  background-color: #ee6988;
-  color: black;
+  background-color: $coral;
+  color: $black;
   border: none;
   border-radius: 12px;
   margin-left: 10px;
-}
 
-button:hover {
-  cursor: pointer;
-  background-color: black;
-  color: lightblue;
+  &:hover {
+    cursor: pointer;
+    background-color: $black;
+    color: $lightBlue;
+  }
 }
