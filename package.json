@@ -12,10 +12,10 @@
     "bootstrap": "^4.5.0",
     "emoji-mart": "^3.0.0",
     "moment": "^2.26.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^9.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-scrollable-feed": "^1.1.2",
     "react-timestamp": "^5.1.0"
   },
